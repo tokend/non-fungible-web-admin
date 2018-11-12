@@ -11,6 +11,7 @@ import operations from './operations'
 import tfa from './tfa'
 import transactions from './transactions'
 import users from './users'
+import swaps from './swaps'
 
 // new
 import { assetCreation } from './asset-creation'
@@ -37,6 +38,7 @@ export default {
   tfa: tfa,
   transactions: transactions,
   users: users,
+  swaps: swaps,
 
   // new:
   assetCreation,
