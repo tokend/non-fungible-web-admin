@@ -411,6 +411,31 @@ export const UserRoutes = {
           props: true
         }
       ]
+    },
+    {
+      path: '/atomic-swaps',
+      name: 'swaps',
+      redirect: { name: 'swaps.bid-requests' },
+      component: function (resolve) {
+        require(['../../components/User/Swaps/Swaps.vue'], resolve)
+      },
+      children: [
+        {
+          path: 'requests',
+          name: 'swaps.bid-requests',
+          component: function (resolve) {
+            require(['../../components/User/Swaps/Swaps.BidRequests.vue'], resolve)
+          }
+        },
+        {
+          path: 'requests/:id',
+          name: 'swaps.request-manager',
+          component: function (resolve) {
+            require(['../../components/User/Swaps/Swaps.BidRequestManager.vue'], resolve)
+          },
+          props: true
+        }
+      ]
     }
   ]
 }

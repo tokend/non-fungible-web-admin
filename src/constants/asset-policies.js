@@ -12,5 +12,7 @@ export const ASSET_POLICIES_VERBOSE = {
   [xdr.AssetPolicy.withdrawable().value]: 'Withdrawable',
   [xdr.AssetPolicy.twoStepWithdrawal().value]: 'Two step withdrawal',
   [xdr.AssetPolicy.requiresKyc().value]: 'Requires Kyc',
-  [xdr.AssetPolicy.issuanceManualReviewRequired().value]: 'Issuance manual review required'
+  [xdr.AssetPolicy.issuanceManualReviewRequired().value]: 'Issuance manual review required',
+  [xdr.AssetPolicy.canBeBaseInAtomicSwap().value]: 'Can be base in atomic swap',
+  [xdr.AssetPolicy.canBeQuoteInAtomicSwap().value]: 'Can be quote in atomic swap'
 }

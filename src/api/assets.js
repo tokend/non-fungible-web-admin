@@ -8,9 +8,11 @@ import { envelopOperations } from './helpers/envelopOperations'
 
 const ScopedServerCallBuilder = ServerCallBuilder.makeScope()
   .registerResource('assets')
+  .registerResource('asset')
   .registerResource('holders')
   .registerResource('asset_pairs', 'assetPairs')
   .registerResource('transactions')
+  .registerResource('balances')
 
 export default {
   getAllSystemAssets () {
@@ -37,6 +39,14 @@ export default {
     return new ScopedServerCallBuilder()
       .assets(code)
       .holders()
+      .sign()
+      .get()
+  },
+
+  getByBalanceId (balanceId) {
+    return new ScopedServerCallBuilder()
+      .balances(balanceId)
+      .asset()
       .sign()
       .get()
   },

@@ -156,6 +156,26 @@
         />
       </div>
 
+      <div class="app__form-row">
+        <tick-field class="app__form-field"
+        v-model="asset.policy"
+        :label="ASSET_POLICIES_VERBOSE[ASSET_POLICIES.canBeBaseInAtomicSwap]"
+        :cb-value="ASSET_POLICIES.canBeBaseInAtomicSwap"
+        :disabled="isPending"
+        />
+      </div>
+
+
+      <div class="app__form-row">
+        <tick-field class="app__form-field"
+        v-model="asset.policy"
+        :label="ASSET_POLICIES_VERBOSE[ASSET_POLICIES.canBeQuoteInAtomicSwap]"
+        :cb-value="ASSET_POLICIES.canBeQuoteInAtomicSwap"
+        :disabled="isPending"
+        />
+      </div>
+
+
       <div class="asset-manager-advanced__block">
         <div class="asset-manager-advanced__heading">
           <h3>Advanced</h3>

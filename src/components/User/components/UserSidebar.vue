@@ -46,6 +46,13 @@
         </router-link>
       </li>
 
+      <li class="user-sidebar__nav-li">
+        <router-link :to="{ name: 'swaps' }">
+          <mdi-swap-horizontal-icon/>
+          <span>Atomic swaps</span>
+        </router-link>
+      </li>
+
       <div class="user-sidebar__nav-section-heading">
         SYNDICATE
       </div>
@@ -94,6 +101,7 @@ import 'mdi-vue/BookIcon'
 import 'mdi-vue/OpenInNewIcon'
 import 'mdi-vue/ChartLineVariantIcon'
 import 'mdi-vue/AccountPlusIcon'
+import 'mdi-vue/SwapHorizontalIcon'
 
 import '@/assets/mdi/AccountStarIcon'
 import config from '@/config'

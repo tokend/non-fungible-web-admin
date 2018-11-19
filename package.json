@@ -32,7 +32,7 @@
     "numeral": "^2.0.6",
     "querystring": "^0.2.0",
     "raven-js": "^3.19.1",
-    "tokend-js-sdk": "git+https://github.com/tokend/js-sdk.git",
+    "tokend-js-sdk": "https://github.com/tokend/js-sdk#feature/atomic-swap",
     "tokend-wallet-js-sdk": "https://github.com/tokend/wallet-js-sdk.git",
     "ts-loader": "^2.3.2",
     "ua-parser-js": "^0.7.14",

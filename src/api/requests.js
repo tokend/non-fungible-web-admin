@@ -94,6 +94,7 @@ export const requests = {
 
   rejectKyc (request, reason) {
     const action = xdr.ReviewRequestOpAction.reject().value
+
     return this._reviewKyc({ action, reason },
       request, {
         remove: KYC_TASKS_TO_REMOVE_ON_REJECT,
